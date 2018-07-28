@@ -8,29 +8,33 @@ It is a hard pill to swallow, but there is no way around the first rule of writi
 == What Docs Are
 
 As you'll see, I have a liberal view of what constitutes “technical documentation” at a software company -- probably more in tune with what many call “technical communications”.
+// This file (and others) does take a very _software_-centric view of documentation, please do keep in mind the hardware, process, academic and legal documentation that also benefit from DocOps. Even in the open source world there are the Raspberry Pi users who also have to create docs about their products.
 I also have a broad definition of what falls under the purview of technical documentation management.
 I prefer to be within one hop of every significant technology document the Engineering organization touches, from knowledge base articles to slide decks to drafts of blog posts and white papers.
+// I would go even further and suggest that bill of materials and build documentation (for hardware products) should also be considered, among other things that are not considered traditional "documentation." A crafty DocOps person will query the BOM to build the latest-and-greatest list that users can use to confirm they received everything needed. If the BOM isn't up to date, that's not the tech writer's fault, but if the docs aren't it is. DocOps can help the tech writer by removing the tedious and unnecessary task of duplicating (probably through the error-prone copy-and-paste) someone else's effort. DocOps can improve the user experience, make the company more efficient while at the same time reducing the company's risk. Instead of taking the view of "documentation" DocOps should be pursuing the it's-all-content-and-it-doesn't-matter-where-it-comes-from-or-who-owns-it mentality.  
 This does not mean I want to be in charge of it all; I certainly don't want to review it, let alone edit it.
 I just like to know what is where, or at least how to find everything.
 And it means I want the engineers I work with to know I care about all that stuff.
 
 At Rocana, I worked regularly with developers and project managers in Engineering, as well as everybody in Customer Success.
 Having _their_ docs in order makes my life better in numerous ways which we'll explore throughout this book.
-For now, I want to introduce the theme that bad documentation is everybody's problem, not just users’.
+For now, I want to introduce the theme that bad documentation is everybody's problem, not just end users’.
 And documentation itself is way more than just the docs you prepare for end users or third-party developers, or even anything you might need to produce for Marketing.
 It's all of the meeting notes, specifications, task-management issues, use cases, support cases, Git commit messages, help desk tickets, and on and on.
+// I touched on more examples above.
 
 Well kept, these are also your assets -- they include all the answers SMEs have forgotten or misremembered.
+// Not just _your_ assets, but the _company's_ assets, and the company _should_ care about its asset. Technical writing and content development is often (always?) seen on the Profit and Loss (P&L) side of the ledger when there is strong reasons it should be listed in the Assets column. Ask any executive if they consider their documentation an asset and you'll likely be met with a quizzical look at best. Ask them what would happen to their business if all of their internal documentation, knowledge bases, notes, scribbles, and so on were lost or destroyed. How long would it take to get back up and running, assuming it would be possible at all? Those scribbles are all assets!
 They won't contain everything you need, and they'll surely contain plenty of contradictions and stuff you would never want to release, yet it's all critical.
 Some of this content is automatically organized, such as task/help tickets and code commits.
 The rest must be actively curated, even if never examined closely.
 
 This book is going to dwell plenty on what tech docs _are_, but first let's clear up what docs _aren't_.
 
-== Docs Are Not for Reading
+== Tech Docs Are Not for Reading
 
 I try not to refer to _reading_ docs, but rather _using_ them.
-That is because I believe, quite simply, that _good technical writing is not even meant to be read_.
+That is because I believe, quite simply, that _good technical writing is not even meant to be read_. That is because tech docs are used to accomplish an immediate goal or task. The goal is never reading for reading's sake or for entertainment. Tech docs are not consumed the way a mystery or romance novel is, except by the very rare individual. Tech docs help the consumer _do_ something.
 
 Okay, if you consider books like this one to be _technical writing_, then _some_ technical writing is meant to be read like prose -- although I do not expect it to be read cover-to-cover or even in order.
 Still, most product-related technical documentation will _not be_ read, no matter how it was intended by its authors.
@@ -41,13 +45,13 @@ If you're anything like me, you're working on a novel or three, and maybe you'll
 But the only thing that's getting _published_ at the moment is that damn user manual, so you'd better believe we're going to _write_ that thing as if someone is _reading_ it.
 
 Usually there is even a spot here or there, in the introduction or a sidebar, where we can open up that throttle and write a few contiguous paragraphs of prose, really let the wind of the open page have its way with our free-flowing hair.
-We cherish the relative latitude and runway these interludes provide, even if we never quite achiev; flight.
+We cherish the relative latitude and runway these interludes provide, even if we never quite achieve flight.
 
 Because mostly we don't write; instead:
 
 * We _keep track of_ content that fits better in tables, charts, and lists than in paragraphs;
 * We _follow our own instructions_, hoping to catch docs bugs before customers or developers do;
-* We _chase down developers_, explaining that cave etchings are preferred to nothing, but secretly wondering why people who can code in seven programming languages can't be bothered to write a formatted list in English;
+* We _chase down developers_, explaining that cave etchings are preferred to nothing, but secretly wondering why people who can code in seven programming language, can't be bothered to write a formatted list in English;
 * We _pester our users and coworkers_ about the docs, whether they use them, "Why not?", "Could you maybe just give them a try?", and of course the old, "Yes, they were included with the installation and are on our website";
 * We _prune, reformat, and edit_ scribbles, notes, and sometimes well-written content from SMEs;
 * And we _create visualizations_ that we hope make sense to people who actually use this stuff (be that an end user or a designer who will upgrade our graphics).
@@ -63,6 +67,7 @@ Just because we do not always get to spout off freely as I am currently spouting
 Docs may not close deals very often, but bad docs can frustrate, costing degrees of a potential customer's confidence.
 
 // TODO pic of Erin in "Dom Wins Deals" t-shirt. Or else me in mine.
+// TODO find the statistics that say that 60-78% of all enterprise software purchasers _read_ the technical documentation _before_ making a purchase. (I believe this stat comes from IBM; there may be other sources.) Tech docs are as much, if not more so, a part of the pre-sales process as the marketing material, because purchasers don't trust the marketing material in the same way they trust the documentation. With the marketing material they know they're being _sold_ something. With the documentation the default position and assumption is: "just the facts, ma'am," which gives the documentation a fair amount of gravitas. 
 
 == Reading Docs
 
@@ -123,6 +128,8 @@ Much as I'll talk about modular docs (see <<topic-based-authoring>>) that can be
 They should make _mastering_ your product seem plausible.
 
 // TODO citations re about docs as narrative
+
+// Humans are hardwired to connect to story. Back when details were passed along in oral form, it was done in the form of metaphor and story. Putting the user/reader in the position of the hero on his/her/their journey allows the reader to identify their situation and where they are in it. Good documentation will help the reader overcome the hero's obstacle and explain what the resolution was (and any next steps, if there are any).
 
 I originally titled this subsection “Docs _Should_ Tell a Story”, but the truth is, even poor docs tell a story.
 We'll get to that story in a second.
@@ -206,6 +213,7 @@ The more hands-on, the sooner, the better.
 
 installation/setup::
 If all you showed me in the last section was screenies or a demo, it's time to get me up and running.
+// Screenies? A strict editor might suggest here that you kill your darling(s) in favor of a more neutral and understood (especially by English as second language readers -- you do expect you'll get those, right?).
 Maybe setup isn't so simple; let me know that now, but invite me to struggle along with you.
 Don't decide for me how badly I need your product; warn me that I might pull my hair out trying to get it to work for me, but give me a fighting chance.
 
@@ -225,7 +233,7 @@ A good “Contributing” section includes:
 
 licensing/redistribution::
 Make it as clear as you can how you intend the product to be reused.
-You don't have to promise to support users in any way, and you needn't provide any kind of warrantee, but you should make it clear the conditions under which your source code (as well as the packaged product) may be modified and redistributed.
+You don't have to promise to support users in any way, and you needn't provide any kind of warranty, but you should make it clear the conditions under which your source code (as well as the packaged product) may be modified and redistributed.
 
 We will be exploring README file contents throughout the rest of this book.
 Not only is it the first source file your team should ever initiate, it also must be reviewed with every new merge or release.
