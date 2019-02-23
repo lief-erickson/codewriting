@@ -1,6 +1,16 @@
+# tag::example-snippet[]
 posts:
   paid:
-    - org: Rocana, Inc (formerly ScalingData)
+    - org: Codewriting, LLC
+      titles:
+        - Principal
+        - Codewriter
+      dates:
+        start: 2017-10-01
+        end:
+      description: maintain open-source technical documentation platform (https://www.ajyl.org/liquidoc-cmf[LiquiDoc CMF]); install, instruct, and maintain docs platforms for excellent engineering organizations
+      url: https://codewriting.org
+    - org: Rocana (formerly ScalingData)
       titles:
         - Technical Documentation Manager
         - Engineering Technical Lead
@@ -8,7 +18,8 @@ posts:
         start: 2015-03-01
         end: 2017-10-01
       description: responsible for writing, editing, and managing all customer-facing technical docs, as well as overseeing all common internal documentation; create & maintain tooling to facilitate docs
-      url: http://rocana.com
+      url: https://www.crunchbase.com/organization/rocana
+# end::example-snippet[]
 
     - org: Activore (Actively Social Networks, Inc)
       titles:
@@ -29,7 +40,7 @@ posts:
       dates:
         start: 2012-01-01
         end:   2012-10-01
-      description: reorganize firm into small worker cooperative; acquire new clients; manage ongoing website development projects
+      description: reorganize firm into small worker cooperative; acquire new clients; manage ongoing website development projects; found and lead Activore startup
       url: http://agaric.com/
 
     - org: Pete's Big Mouth, Inc.
@@ -43,8 +54,9 @@ posts:
 
     - org: WebRoot Solutions
       titles:
-        - Partner
+        - Principal
         - Consultant
+        - Developer
       dates:
         start: 2007-07-01
         end: 2011-08-01
@@ -65,6 +77,7 @@ posts:
         - Collective Member
         - Managing Editor
         - Co-founder
+        - Developer
       dates:
         start: 2003-07-01
         end:   2007-06-01
@@ -98,14 +111,6 @@ posts:
         start: 2000-04-01
         end:
       description: Train activists to perform first responder duties where EMS will not tread, including disaster & social unrest scnearios
-
-    - org: Kerhonkson Accord First Aid Squad
-      titles:
-        - First aid volunteer
-      dates:
-        start: 2017-09-01
-        end:
-      description: Volunteer first responder, emergency medical services
 
     - org: Constitutional Communications
       titles:
@@ -209,19 +214,19 @@ posts:
       description: Assistant volunteer coordinator, assistant editor of monthly Peace Newsletter
 
 skills:
-  - Platform development
-  - Project/product management
-  - Git, Ruby, Python, PHP, HTML5/CSS, JavaScript, Liquid, AsciiDoc, DocBook
+  - platform development
+  - project/product management
+  - Git, Ruby, Bash, Python, PHP, JavaScript, Liquid, AsciiDoc, HTML5/CSS, XML/XSLT, SQL, GraphQL
   - Linux & Windows server administration
   - website & application development
   - database design & administration
   - software purchase consulting
 
 experience:
-  - 13 years in Internet administration and application development
+  - 19 years in Internet administration and application development
   - 2 years running a startup using lean-startup methodology
   - Record of dedication to the nonprofit and cooperative sectors
-  - 21 years in publishing and media, including print, radio, and Web
+  - 23 years in publishing and media, including print, radio, and Web
   - Solutions-oriented technical, structural, and PR problem solving on a client-by-client basis
   - 17 years experience in nonprofit organizing, management, and consulting
 
